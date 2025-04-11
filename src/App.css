@@ -30,28 +30,6 @@ h1 {
   font-size: calc(10px + 2vmin);
 }
 
-.as-icon {
-  height: 30px;
-  width: 30px;
-  filter: invert(38%) sepia(51%) saturate(531%) hue-rotate(131deg) brightness(89%) contrast(93%);
-}
-
-.as-icon__folder {
-  filter: invert(47%) sepia(81%) saturate(462%) hue-rotate(345deg) brightness(79%) contrast(89%);  
-}
-
-.as-icon__fork {
-  filter: invert(18%) sepia(46%) saturate(5170%) hue-rotate(276deg) brightness(95%) contrast(91%);
-}
-
-.as-icon__linkedin {
-  filter: invert(28%) sepia(78%) saturate(1883%) hue-rotate(178deg) brightness(93%) contrast(102%);
-}
-
-.as-icon__github {
-  filter: invert(64%) sepia(28%) saturate(1265%) hue-rotate(37deg) brightness(97%) contrast(70%);
-}
-
 .as-links {
   list-style-type: none;
   padding-left: 20px;
@@ -70,6 +48,28 @@ h1 {
   color: var(--color3);
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 24px;
+}
+
+.as-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.as-icon__folder {
+  filter: invert(47%) sepia(81%) saturate(462%) hue-rotate(345deg) brightness(79%) contrast(89%);  
+}
+
+.as-icon__fork {
+  filter: invert(18%) sepia(46%) saturate(5170%) hue-rotate(276deg) brightness(95%) contrast(91%);
+}
+
+.as-icon__contact {
+  filter: invert(64%) sepia(28%) saturate(1265%) hue-rotate(37deg) brightness(97%) contrast(70%);
+}
+
+.as-icon__linkedin {
+  filter: invert(28%) sepia(78%) saturate(1883%) hue-rotate(178deg) brightness(93%) contrast(102%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
