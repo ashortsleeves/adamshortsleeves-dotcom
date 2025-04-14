@@ -7,13 +7,25 @@
   --color4: #173540;
   --color5: #161F30;
   --color6: #B06427;
+  --font: "Quicksand", sans-serif;
 }
 
 .App {
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font);
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--color1);
+  font-weight: 300;
+  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+.App-header,
+.as-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -21,16 +33,7 @@ h1 {
   color: var(--color4);
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.as-links {
+.as-links menu {
   list-style-type: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -38,7 +41,9 @@ h1 {
   max-width: 250px;
 }
 
-.as-links a {
+.as-links a, 
+.as-links button {
+  font-family: var(--font);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,6 +54,10 @@ h1 {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 24px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
 }
 
 .as-icon {
