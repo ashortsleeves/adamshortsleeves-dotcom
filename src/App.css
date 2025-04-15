@@ -33,6 +33,13 @@ h1 {
   color: var(--color4);
 }
 
+img.as-me {
+  border-bottom-right-radius: 360px;
+  border-bottom-left-radius: 360px;
+  width: 200px;
+  margin-top: 90px;
+}
+
 .as-links menu {
   list-style-type: none;
   padding-left: 20px;
@@ -81,9 +88,24 @@ h1 {
   filter: invert(28%) sepia(78%) saturate(1883%) hue-rotate(178deg) brightness(93%) contrast(102%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.as-icon-wrapper__folder {
+  position: relative;
 }
 
+.as-icon-wrapper__folder::after {
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  content: '';
+  height: 20px;
+  width: 30px;
+  border-radius: 4px;
+  background-color: var(--color6);
+  transition: ease-in-out 0.3s;
+}
+
+button:hover .as-icon-wrapper__folder::after {
+  /* transform: matrix(1, 0, -0.8, 0.8, 9, 0); */
+  transform: matrix(1, 0, -0.4, 0.8, 4, 2);
+}

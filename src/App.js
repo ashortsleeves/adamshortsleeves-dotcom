@@ -5,9 +5,7 @@ import Tabs from './components/Tabs';
 import TabButton from './components/TabButton';
 import Contact from './components/Contact';
 
-import folder from './icons/folder.svg';
-import fork from './icons/fork.svg';
-import letter from './icons/letter.svg';
+import me from './images/WorkPORTRAIT-cropped.png';
 import linkedin from './icons/linkedin.svg';
 import github from './icons/github.svg';
 
@@ -39,6 +37,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        
+        <img class="as-me" src={me} alt="Adam Shortsleeves" />
         <h1>Hi! I'm Adam.</h1>
         <p>I build websites.</p>
       </header>
