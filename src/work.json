@@ -1,0 +1,47 @@
+[
+    {
+        "name": "The Mobile Locker Company",
+        "url": "https://www.themobilelockerco.com/",
+        "img": "tmlc"
+    },
+    {
+        "name": "Saco River Wildlife Center",
+        "url": "https://sacoriverwildlifecenter.org/",
+        "img": "srwc"
+    },
+    {
+        "name": "Bolduc Maple Farms",
+        "url": "https://bolducmaplefarms.com/",
+        "img": "bmf"
+    },
+    {
+        "name": "Rutland Overhead Door Company",
+        "url": "https://www.rutlandohd.com/",
+        "img": "ohdrvt"
+    },
+    {
+        "name": "Vulcan Electric",
+        "url": "https://www.vulcanelectric.com/",
+        "img": "vulcan"
+    },
+    {
+        "name": "RMC Maine",
+        "url": "https://www.rmcmaine.com/",
+        "img": "rmc"
+    },
+    {
+        "name": "Lynch Logistics",
+        "url": "https://www.lynchlogistics.com/",
+        "img": "lynch"
+    },
+    {
+        "name": "BookieBi",
+        "url": "https://bookiebi.com/",
+        "img": "bbi"
+    },
+    {
+        "name": "W.A. Bean & Sons",
+        "url": "https://www.beansmeats.com/",
+        "img": "wabean"
+    } 
+]

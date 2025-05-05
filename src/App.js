@@ -4,6 +4,7 @@ import Section from './components/Section';
 import Tabs from './components/Tabs';
 import TabButton from './components/TabButton';
 import Contact from './components/Contact';
+import Work from './components/Work';
 
 import me from './images/WorkPORTRAIT-cropped.png';
 import linkedin from './icons/linkedin.svg';
@@ -27,6 +28,12 @@ function App() {
       </div>
     );
 
+    if (selectedLink === 'myWork') {
+      tabContent = (
+        <Work />
+      )
+    }
+
     if (selectedLink === 'contactMe') {
      tabContent = (
       <Contact />
@@ -38,15 +45,19 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <img class="as-me" src={me} alt="Adam Shortsleeves" />
+        <img className="as-me" src={me} alt="Adam Shortsleeves" />
         <h1>Hi! I'm Adam.</h1>
         <p>I build websites.</p>
       </header>
       <Section className="as-links">
+
+
         <Tabs
+          activeBtns={selectedLink ? true: false}
           ButtonsContainer="menu"
           buttons={
             <>
+              <button className={ selectedLink ? 'as-back' : 'as-back as-back__hidden' } onClick={() => setSelectedLink(undefined)}>Back</button>
               <TabButton
                 isSelected={selectedLink === 'myWork'}
                 onClick={() => handleSelect('myWork')}
@@ -65,14 +76,14 @@ function App() {
                 title={'Contact Me'}
                 image={"letter"}
               />
-              <li><a href="https://www.linkedin.com/in/adam-shortsleeves/">LinkedIn <img src={linkedin} className='as-icon as-icon__linkedin' alt="linkedin Icon" /></a></li>
-              <li><a href="https://github.com/ashortsleeves">GitHub <img src={github} className='as-icon as-icon__github' alt="github Icon" /></a></li>
+              <a href="https://www.linkedin.com/in/adam-shortsleeves/">LinkedIn <img src={linkedin} className='as-icon as-icon__linkedin' alt="linkedin Icon" /></a>
+              <a href="https://github.com/ashortsleeves">GitHub <img src={github} className='as-icon as-icon__github' alt="github Icon" /></a>
             </>
           }
         />
       </Section>
       <Section>
-      {tabContent}
+        {tabContent}
       </Section>
     </div>
   );

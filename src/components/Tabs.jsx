@@ -1,7 +1,7 @@
-export default function Tabs({ children, buttons, ButtonsContainer }) {
+export default function Tabs({ children, buttons, ButtonsContainer, activeBtns }) {
     return (
     <>
-        <ButtonsContainer>
+        <ButtonsContainer className={activeBtns ? 'active-btns' : undefined}>
             {buttons}
         </ButtonsContainer>
         {children}

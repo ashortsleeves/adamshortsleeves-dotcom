@@ -14,7 +14,6 @@ const imageMap = {
 
 export default function TabButton({ title, isSelected, image, ...props }) {
   return (
-    <li>
       <button className={isSelected ? 'active' : undefined} { ...props }>
         {title}
         <div className={'as-icon-wrapper as-icon-wrapper__' + image}>
@@ -25,6 +24,5 @@ export default function TabButton({ title, isSelected, image, ...props }) {
           />
         </div>
       </button>
-    </li>
   );
 }
