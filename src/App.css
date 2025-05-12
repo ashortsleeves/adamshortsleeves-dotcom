@@ -294,6 +294,11 @@ button.as-back__hidden {
   justify-content: center;
 }
 
+.as-contact p {
+  text-align: center;
+  padding: 0 15px;
+}
+
 .as-contact form {
   display: flex;
   flex-direction: column;
