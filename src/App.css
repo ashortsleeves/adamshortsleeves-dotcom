@@ -326,6 +326,7 @@ button.as-back__hidden {
   background-color: var(--color3);
   border: transparent;
   color: #fff;
+  cursor: pointer;
 }
 
 @keyframes gradient {
