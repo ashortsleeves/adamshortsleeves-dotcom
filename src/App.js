@@ -65,7 +65,7 @@ function App() {
           ButtonsContainer="menu"
           buttons={
             <>
-              <button className={ selectedLink ? 'as-back' : 'as-back as-back__hidden' } onClick={() => setSelectedLink(undefined)}><img className='arrow-back' src={arrowBack}/> Back</button>
+              <button className={ selectedLink ? 'as-back' : 'as-back as-back__hidden' } onClick={() => setSelectedLink(undefined)}><img className='arrow-back' src={arrowBack} alt="Return Arrow" /> Back</button>
               <TabButton
                 isSelected={selectedLink === 'myWork'}
                 onClick={() => handleSelect('myWork')}

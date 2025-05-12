@@ -11,7 +11,7 @@ export default function Work() {
                         {site.name}
                         <span>{site.description}</span>
                     </p>
-                    <img src={'/screenshots/' + site.img + '.png'}/>
+                    <img src={'/screenshots/' + site.img + '.png'} alt={site.name} />
                 </a>
             ))}
         </div>
