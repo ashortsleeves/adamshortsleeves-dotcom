@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Heckdivers.net",
+        "url": "https://heckdivers.net/",
+        "img": "heckdivers",
+        "description": "Heckdivers is a web application built with React and Vite that provides information and statistics for the game Helldivers II."
+    },
+    {
+        "name": "Vulkari64",
+        "url": "https://vulkari64.com/",
+        "img": "vk64",
+        "description": "I write 80's-inspired electronic music with friends. I also built our website, merch store, and do our album art."
+    }
+]

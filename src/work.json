@@ -2,46 +2,67 @@
     {
         "name": "The Mobile Locker Company",
         "url": "https://www.themobilelockerco.com/",
-        "img": "tmlc"
+        "img": "tmlc",
+        "description": "Developer and Designer"
     },
     {
         "name": "Saco River Wildlife Center",
         "url": "https://sacoriverwildlifecenter.org/",
-        "img": "srwc"
+        "img": "srwc",
+        "description": "Developer and Designer"
+    },
+    {
+        "name": "Wellcome Leap",
+        "url": "https://wellcomeleap.org/",
+        "img": "wl",
+        "description": "Ongoing support and development as part of of the team at Third and Grove."
     },
     {
         "name": "Bolduc Maple Farms",
         "url": "https://bolducmaplefarms.com/",
-        "img": "bmf"
+        "img": "bmf",
+        "description": "Developer, designed by the team at Speak Local"
     },
     {
         "name": "Rutland Overhead Door Company",
         "url": "https://www.rutlandohd.com/",
-        "img": "ohdrvt"
+        "img": "ohdrvt",
+        "description": "Developer, designed by the team at Links Web Design"
     },
     {
         "name": "Vulcan Electric",
         "url": "https://www.vulcanelectric.com/",
-        "img": "vulcan"
+        "img": "vulcan",
+        "description": "Developer and Designer, built while working at Links Web Design"
     },
     {
         "name": "RMC Maine",
         "url": "https://www.rmcmaine.com/",
-        "img": "rmc"
+        "img": "rmc",
+        "description": "Developer, designed by the team at Links Web Design"
     },
     {
         "name": "Lynch Logistics",
         "url": "https://www.lynchlogistics.com/",
-        "img": "lynch"
+        "img": "lynch",
+        "description": "Developer, designed by the team at Links Web Design"
+    },
+        {
+        "name": "Gen Rev",
+        "url": "https://genrev.club/",
+        "img": "genrev",
+        "description": "Developer and Designer"
     },
     {
         "name": "BookieBi",
         "url": "https://bookiebi.com/",
-        "img": "bbi"
+        "img": "bbi",
+        "description": "Developer, designed by the team at Speak Local"
     },
     {
         "name": "W.A. Bean & Sons",
         "url": "https://www.beansmeats.com/",
-        "img": "wabean"
+        "img": "wabean",
+        "description": "Developer, designed by the team at Links Web Design"
     } 
 ]

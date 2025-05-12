@@ -5,8 +5,10 @@ import Tabs from './components/Tabs';
 import TabButton from './components/TabButton';
 import Contact from './components/Contact';
 import Work from './components/Work';
+import SideProjects from './components/SideProjects';
 
 import me from './images/WorkPORTRAIT-cropped.png';
+import arrowBack from './icons/arrow-back.svg';
 import linkedin from './icons/linkedin.svg';
 import github from './icons/github.svg';
 
@@ -34,6 +36,12 @@ function App() {
       )
     }
 
+    if (selectedLink === 'sideProjects') {
+      tabContent =(
+        <SideProjects />
+      )
+    }
+
     if (selectedLink === 'contactMe') {
      tabContent = (
       <Contact />
@@ -57,7 +65,7 @@ function App() {
           ButtonsContainer="menu"
           buttons={
             <>
-              <button className={ selectedLink ? 'as-back' : 'as-back as-back__hidden' } onClick={() => setSelectedLink(undefined)}>Back</button>
+              <button className={ selectedLink ? 'as-back' : 'as-back as-back__hidden' } onClick={() => setSelectedLink(undefined)}><img className='arrow-back' src={arrowBack}/> Back</button>
               <TabButton
                 isSelected={selectedLink === 'myWork'}
                 onClick={() => handleSelect('myWork')}

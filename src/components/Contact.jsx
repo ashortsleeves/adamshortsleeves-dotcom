@@ -27,7 +27,7 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <div class="as-contact">
         {isSubmitted ? (
             <p> Thank you for your message! I'll be in touch soon.</p>
         ) : (
@@ -41,6 +41,6 @@ export default function Contact() {
                 <input type="submit" value="Send" />
             </form>
         )}
-    </>
+    </div>
   );
 };

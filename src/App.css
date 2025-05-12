@@ -153,13 +153,19 @@ button:hover .as-icon-wrapper__folder::after {
 
 
 button.as-back {
-  font-size: 18px;
+  font-size: 14px;
   height: auto;
   position: absolute;
   bottom: 100%;
   left: 0;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  width: 50px;
+}
+
+.arrow-back {
+  height: 10px;
+  
 }
 
 button.as-back__hidden {
@@ -209,8 +215,15 @@ button.as-back__hidden {
   z-index: 1;
 }
 
+.as-work a p span {
+  font-size: 14px;
+  display: block;
+  margin-top: 30px;
+}
+
 .as-work a img {
   transition: 0.3s ease-in-out;
+  
   box-shadow: 11px 10px 17px -12px rgba(0,0,0,0.75);
 }
 
@@ -221,5 +234,43 @@ button.as-back__hidden {
 
 .as-work a:hover > img,
 .as-work a:focus > img {
-  opacity: 0.1;
+  opacity: 0.07;
+}
+
+.as-sideprojects {
+  justify-content: center;
+}
+
+.as-contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.as-contact label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.as-contact input,
+.as-contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.as-contact textarea {
+  height: 200px;
+}
+
+.as-contact input[type=submit] {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 24px;
+  background-color: var(--color3);
+  border: transparent;
+  color: #fff;
 }
