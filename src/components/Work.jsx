@@ -6,7 +6,7 @@ export default function Work() {
     return (
         <div className="as-work">
             {sites.map((site, index) => (
-                <a href={site.url} key={index} target='_blank'>
+                <a href={site.url} key={index} target='_blank' rel="noreferrer">
                     <p>
                         {site.name}
                         <span>{site.description}</span>
