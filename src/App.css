@@ -112,7 +112,6 @@ img.as-me {
 }
 
 button:hover .as-icon-wrapper__folder::after {
-  /* transform: matrix(1, 0, -0.8, 0.8, 9, 0); */
   transform: matrix(1, 0, -0.4, 0.8, 4, 2);
 }
 
@@ -165,12 +164,17 @@ button.as-back {
 
 .arrow-back {
   height: 10px;
-  
 }
 
 button.as-back__hidden {
   opacity: 0;
   cursor: auto; 
+}
+
+.as-work,
+.as-sideprojects,
+.as-contact {
+  padding-bottom: 120px;
 }
 
 .as-work {
@@ -193,15 +197,64 @@ button.as-back__hidden {
   padding: 15px;
 }
 
+.as-work .as-description p {
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.as-work .as-description p span {
+  display: block;
+  margin-top: 15px;
+}
+
 @media (min-width: 768px) {
-  .as-work a {
+  .as-work a,
+  .as-work .as-description {
     width: 50%;
+  }
+
+  .as-work .as-description {
+    box-sizing: border-box;
+    aspect-ratio: 895/596;
+    padding: 15px;
+  }
+
+  .as-work .as-description p {
+    padding: 45px 25px;
+    box-shadow: 9px 9px 29px 0px rgba(0,0,0,0.34);
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	  background-size: 400% 400%;
+	  animation: gradient 15s ease infinite;
+    color: #fff;
+    font-weight: 600;
   }
 }
 
+@media (min-width: 878px) {
+  .as-work .as-description p {
+    padding: 45px 25px;
+    font-size: 24px;
+  }  
+}
+
 @media (min-width: 1200px) {
-  .as-work a {
+  .as-work a,
+  .as-work .as-description {
     width: 33%;
+  }
+
+  .as-work .as-description p {
+    padding: 45px 25px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .as-work .as-description p {
+    padding: 45px 25px;
+    font-size: 24px;
   }
 }
 
@@ -223,8 +276,8 @@ button.as-back__hidden {
 
 .as-work a img {
   transition: 0.3s ease-in-out;
-  
   box-shadow: 11px 10px 17px -12px rgba(0,0,0,0.75);
+  box-shadow: 9px 9px 29px 0px rgba(0,0,0,0.34);
 }
 
 .as-work a:hover > p,
@@ -273,4 +326,16 @@ button.as-back__hidden {
   background-color: var(--color3);
   border: transparent;
   color: #fff;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
