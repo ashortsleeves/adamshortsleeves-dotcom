@@ -21,7 +21,7 @@ function App() {
     setSelectedLink(selectedButton);
   }
 
-  let tabContent = <p>Please select a topic.</p>;
+  let tabContent = "";
 
   if (selectedLink) {
     tabContent = (
