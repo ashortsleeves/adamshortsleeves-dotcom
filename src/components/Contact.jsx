@@ -27,7 +27,7 @@ export default function Contact() {
   };
 
   return (
-    <div class="as-contact">
+    <div className="as-contact">
         {isSubmitted ? (
             <p> Thank you for your message! I'll be in touch soon.</p>
         ) : (
