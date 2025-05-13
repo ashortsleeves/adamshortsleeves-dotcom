@@ -7,9 +7,14 @@ export default function Contact() {
   const recaptchaRef = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
+  const btnRef = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
+    form.current.className = 'as-sending';
+    btnRef.current.value = "Sending...";
+    btnRef.current.disabled = true;
 
     if (!captchaValue) {
       alert("Please verify that you're a human.");
@@ -32,6 +37,7 @@ export default function Contact() {
         },
         (error) => {
           console.log('FAILED...', error.text);
+          alert("Sorry, something went wrong on my end. Try reaching out on LinkedIn.")
         }
       );
   };
@@ -54,8 +60,7 @@ export default function Contact() {
             sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
             onChange={(value) => setCaptchaValue(value)}
           />
-
-          <input type="submit" value="Send" />
+          <span className="btn-wrap"><input type="submit" id="asBtn" value="Send" ref={btnRef} /></span>
         </form>
       )}
     </div>

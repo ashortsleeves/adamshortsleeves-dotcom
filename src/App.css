@@ -324,7 +324,24 @@ button.as-back__hidden {
   height: 200px;
 }
 
-.as-contact input[type=submit] {
+.as-contact .btn-wrap {
+  /* display: block; */
+  position: relative;
+}
+.as-sending .btn-wrap::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: calc(50% - 53px);
+  background-color: var(--color3);
+  animation: sending 1s infinite;
+}
+
+.as-contact #asBtn {
+  margin-bottom: 0;
+  width: 100%;
   font-family: var(--font);
   font-weight: 500;
   font-size: 24px;
@@ -332,6 +349,19 @@ button.as-back__hidden {
   border: transparent;
   color: #fff;
   cursor: pointer;
+}
+
+.as-contact .as-sending #asBtn {
+  cursor: not-allowed;
+}
+
+@keyframes sending {
+  0% {
+    width: 15px;
+  }
+  100% {
+    width: 0px;
+  }
 }
 
 @keyframes gradient {
