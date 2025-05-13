@@ -2,10 +2,9 @@ import { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 
-export default function Contact() {
+export default function Contact({ isSubmitted, setIsSubmitted }) {
   const form = useRef();
   const recaptchaRef = useRef();
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
   const btnRef = useRef();
 

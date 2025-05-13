@@ -6,7 +6,7 @@ export default function Work() {
     return (
         <div className="as-work">
             <div className="as-description">
-                <p>I do freelance website design and development. <span>I also work for other agencies and provide ongoing support for their clients.</span></p>
+                <p>Website design and development. <span>I also work for other agencies, providing ongoing support for their clients.</span></p>
             </div>
             {sites.map((site, index) => (
                 <a href={site.url} key={index} target='_blank' rel="noreferrer">

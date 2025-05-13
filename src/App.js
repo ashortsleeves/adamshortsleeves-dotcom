@@ -16,6 +16,8 @@ import './App.css';
 
 function App() {
   const [selectedLink, setSelectedLink] = useState();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
 
   function handleSelect(selectedButton) {
     setSelectedLink(selectedButton);
@@ -43,9 +45,9 @@ function App() {
     }
 
     if (selectedLink === 'contactMe') {
-     tabContent = (
-      <Contact />
-     )
+      tabContent = (
+        <Contact isSubmitted={isSubmitted} setIsSubmitted={setIsSubmitted} />
+      );
     }
   }
 
@@ -55,11 +57,10 @@ function App() {
         
         <img className="as-me" src={me} alt="Adam Shortsleeves" />
         <h1>Hi! I'm Adam.</h1>
+
         <p>I build websites.</p>
       </header>
       <Section className="as-links">
-
-
         <Tabs
           activeBtns={selectedLink ? true: false}
           ButtonsContainer="menu"
@@ -78,12 +79,13 @@ function App() {
                 title={'Side projects'}
                 image={"fork"}
               />
-              <TabButton
+              {!isSubmitted && <TabButton
                 isSelected={selectedLink === 'contactMe'}
                 onClick={() => handleSelect('contactMe')}
                 title={'Contact Me'}
                 image={"letter"}
-              />
+              />}
+
               <a href="https://www.linkedin.com/in/adam-shortsleeves/">LinkedIn <img src={linkedin} className='as-icon as-icon__linkedin' alt="linkedin Icon" /></a>
               <a href="https://github.com/ashortsleeves">GitHub <img src={github} className='as-icon as-icon__github' alt="github Icon" /></a>
             </>

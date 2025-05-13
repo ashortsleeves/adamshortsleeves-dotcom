@@ -22,6 +22,18 @@ export default function TabButton({ title, isSelected, image, ...props }) {
             className={'as-icon as-icon__' + image}
             alt={title + ' icon'}
           />
+          {image === 'fork' && (
+            <>
+              <span className="node node-1"></span>
+              <span className="node node-2"></span>
+              <span className="node node-3"></span>
+              <span className="node node-4"></span>
+              <span className="node node-5"></span>
+              <span className="node node-6"></span>
+              <span className="node node-7"></span>
+              <span className="node node-8"></span>
+            </>
+          )}
         </div>
       </button>
   );
