@@ -86,8 +86,8 @@ function App() {
                 image={"letter"}
               />}
 
-              <a href="https://www.linkedin.com/in/adam-shortsleeves/">LinkedIn <img src={linkedin} className='as-icon as-icon__linkedin' alt="linkedin Icon" /></a>
-              <a href="https://github.com/ashortsleeves">GitHub <img src={github} className='as-icon as-icon__github' alt="github Icon" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/adam-shortsleeves/">LinkedIn <img src={linkedin} className='as-icon as-icon__linkedin' alt="linkedin Icon" /></a>
+              <a target="_blank" href="https://github.com/ashortsleeves">GitHub <img src={github} className='as-icon as-icon__github' alt="github Icon" /></a>
             </>
           }
         />

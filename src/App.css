@@ -74,7 +74,7 @@ img.as-me {
   transition: 0.3s ease-in-out;
   visibility: visible;
   opacity: 1;
-
+  cursor: pointer;
 }
 
 .as-icon {
@@ -275,11 +275,11 @@ button.active .as-icon-wrapper__fork .node::after {
   transition: 0.2s ease-in-out;
 }
 
-@media (min-width: 768px) {
-  button:hover .as-icon__letter {
-    animation: letter 1.5s ease infinite;
-  }
+button:hover .as-icon__letter,
+button.active .as-icon__letter {
+  animation: letter 7s ease infinite;
 }
+
 
 @keyframes letter {
 	0% {
@@ -288,17 +288,20 @@ button.active .as-icon-wrapper__fork .node::after {
   width: 30px;
   opacity: 1;
 	}
-	50% {
+	10% {
   transform: translate(300px, -300px);
   height: 0px;
   width: 0px;
   opacity: 0;
 	}
-  75% {
+  20% {
     transform: translate(0px, 0px);
     height: 30px;
     width: 30px;
     opacity: 0;
+  }
+  80% {
+    opacity: 1;
   }
 	100% {
 		  opacity: 1;
@@ -376,6 +379,10 @@ button.as-back__hidden {
   margin-right: auto;
 }
 
+.as-work div {
+  width: 100%;
+}
+
 .as-work a {
   position: relative;
   box-sizing: border-box;
@@ -407,7 +414,7 @@ button.as-back__hidden {
 }
 
 @media (min-width: 768px) {
-  .as-work a,
+  .as-work div,
   .as-work .as-description {
     width: 50%;
   }
@@ -434,19 +441,19 @@ button.as-back__hidden {
 
 @media (min-width: 878px) {
   .as-work .as-description p {
-    padding: 45px 25px;
+    padding: 45px 45px 45px 25px;
     font-size: 24px;
   }  
 }
 
 @media (min-width: 1200px) {
-  .as-work a,
+  .as-work div,
   .as-work .as-description {
     width: 33%;
   }
 
   .as-work .as-description p {
-    padding: 45px 25px;
+    padding: 45px 45px 45px 25px;
     font-size: 20px;
   }
 }
@@ -488,6 +495,40 @@ button.as-back__hidden {
 .as-work a:hover > img,
 .as-work a:focus > img {
   opacity: 0.07;
+  filter: blur(4px);
+}
+
+.as-work .as-view {
+  display: block;
+  background-color: var(--color3);
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+  width: 80px;
+  text-align: center;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .as-work a {
+    pointer-events: none;
+  }
+
+  .as-work .as-visible {
+    pointer-events: all;
+  }
+
+  .as-work .as-visible > p {
+    opacity: 1;
+  }
+
+  .as-work .as-visible img {
+    opacity: 0.2;
+    box-shadow: 9px 9px 29px 0px rgba(0,0,0,1);
+    filter: blur(5px);
+  }
 }
 
 .as-sideprojects {
