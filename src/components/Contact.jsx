@@ -44,7 +44,7 @@ export default function Contact({ isSubmitted, setIsSubmitted }) {
   return (
     <div className="as-contact">
       {isSubmitted ? (
-        <p>Thank you for your message! I'll be in touch soon.</p>
+        <p>Thank you for your message! <br/>I'll be in touch soon.</p>
       ) : (
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>

@@ -18,6 +18,12 @@
         "description": "Freelance. Developer and Designer"
     },
     {
+        "name": "Gen Rev",
+        "url": "https://genrev.club/",
+        "img": "genrev",
+        "description": "Freelance. Developer and Designer"
+    },
+    {
         "name": "Bolduc Maple Farms",
         "url": "https://bolducmaplefarms.com/",
         "img": "bmf",
@@ -46,12 +52,6 @@
         "url": "https://www.lynchlogistics.com/",
         "img": "lynch",
         "description": "Developer, designed by the team at Links Web Design"
-    },
-        {
-        "name": "Gen Rev",
-        "url": "https://genrev.club/",
-        "img": "genrev",
-        "description": "Freelance. Developer and Designer"
     },
     {
         "name": "BookieBi",
